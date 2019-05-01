@@ -30,11 +30,12 @@ body {
 }
 
 a {
-  color: blue;
-  text-decoration: underline;
+  color:black;
+  font-weight: bold;
+  text-decoration: none;
 }
 a:visited {
-  color: fuchsia;
+  color: navy;
 }
 
 em {
@@ -51,11 +52,13 @@ h1, h2, h3, h4, h5, h6 {
   color: #527bbd;
   margin-top: 1.2em;
   margin-bottom: 0.5em;
-  line-height: 1.3;
+  line-height: 1.5;
+  font-family: 'Roboto';
 }
 
 h1, h2, h3 {
   border-bottom: 2px solid silver;
+  font-size: 2em;
 }
 h2 {
   padding-top: 0.5em;
@@ -81,6 +84,9 @@ hr {
 p {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
+  font-family: 'Roboto';
+  font-size: 1.1em;
+  text-align: justify;
 }
 
 ul, ol, li > p {
@@ -144,6 +150,8 @@ div.admonitionblock {
 
 div.content { /* Block element content. */
   padding: 0;
+  font-size: 1.5em;
+  font-style: oblique;
 }
 
 /* Block element titles. */
@@ -153,6 +161,7 @@ div.title, caption.title {
   text-align: left;
   margin-top: 1.0em;
   margin-bottom: 0.5em;
+  font-family: 'Roboto';
 }
 div.title + * {
   margin-top: 0;
@@ -347,31 +356,84 @@ div.colist td img {
 
 #toc {
   margin-bottom: 2.5em;
+  font-family: 'Roboto';
 }
 
 #toctitle {
   color: #527bbd;
-  font-size: 1.1em;
+  font-size: 1.7em;
   font-weight: bold;
   margin-top: 1.0em;
   margin-bottom: 0.1em;
+  font-family: 'Roboto';
 }
 
 div.toclevel0, div.toclevel1, div.toclevel2, div.toclevel3, div.toclevel4 {
   margin-top: 0;
   margin-bottom: 0;
+  font-size: 1.2em;
+  font-family: 'Roboto';
 }
 div.toclevel2 {
   margin-left: 2em;
   font-size: 0.9em;
+  font-family: 'Roboto';
 }
 div.toclevel3 {
   margin-left: 4em;
   font-size: 0.9em;
+  font-family: 'Roboto';
 }
 div.toclevel4 {
   margin-left: 6em;
   font-size: 0.9em;
+  font-family: 'Roboto';
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  max-width: 100%;
+  height: 25%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.profilePhoto {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  height: 20%;
+  max-width: 100%;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  border: .5em;
+  border-style: ridge;
+}
+
+.githubLink {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1.75%;
+  height: 1.75%;
+  max-width: 100%;
+  margin-top: 0em;
+  margin-bottom: 3em;
+  border: .1em;
+  border-style: solid;
+  border-radius: 0.75em;
+}
+
+.solidIcon{
+  display: block;
+  width: 20%;
+  height: 20%;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 span.aqua { color: aqua; }
@@ -765,7 +827,7 @@ asciidoc.install(2);
 <h2 id="_re_decentralizing_the_world_wide_web">Re-decentralizing the World Wide Web</h2>
 <div class="sectionbody">
 <div class="quoteblock">
-<div class="content">The Web as I envisaged it, we have not seen it yet. The future is still so much bigger than the past.</div>
+<div class="content">"The Web as I envisaged it, we have not seen it yet. The future is still so much bigger than the past."</div>
 <div class="attribution">
 &#8212; Sir Tim Berners Lee
 </div></div>
@@ -774,7 +836,7 @@ asciidoc.install(2);
 This is specially concerning with data, which has become a valuable product, and is generally in the hands of this corporations and services instead of the people who should own them.</p></div>
 <div class="imageblock">
 <div class="content">
-<img src="./images/pod.png" alt="pod.png" />
+<img class="solidIcon" src="./images/pod.png" alt="pod.png" />
 </div>
 </div>
 <div class="paragraph"><p>That is the reason why Tim Berners Lee, alongside MIT and other professionals, have started the development of platform, a technology, a project to Bring back that original conception of the web. The SOLID project.</p></div>
@@ -788,13 +850,13 @@ This is specially concerning with data, which has become a valuable product, and
 <h3 id="_álvaro_sánchez_garcía">Álvaro Sánchez García</h3>
 <div class="imageblock">
 <div class="content">
-<img src="./images/alvaro.png" alt="alvaro.png" />
+<img class="profilePhoto" src="./images/alvaro.png" alt="alvaro.png" />
 </div>
 </div>
 <div class="imageblock">
 <div class="content">
 <a class="image" href="https://github.com/AlvasanG">
-<img src="./images/github.png" alt="github.png" />
+<img class="githubLink" src="./images/github.png" alt="github.png" />
 </a>
 </div>
 </div>
@@ -804,13 +866,13 @@ This is specially concerning with data, which has become a valuable product, and
 <h3 id="_ángel_garcía_menéndez">Ángel García Menéndez</h3>
 <div class="imageblock">
 <div class="content">
-<img src="./images/angel.png" alt="angel.png" />
+<img class="profilePhoto" src="./images/angel.png" alt="angel.png" />
 </div>
 </div>
 <div class="imageblock">
 <div class="content">
 <a class="image" href="https://github.com/flecktarn121">
-<img src="./images/github.png" alt="github.png" />
+<img class="githubLink" src="./images/github.png" alt="github.png" />
 </a>
 </div>
 </div>
@@ -820,13 +882,13 @@ This is specially concerning with data, which has become a valuable product, and
 <h3 id="_enrique_josé_rodriguez_martín">Enrique José Rodriguez Martín</h3>
 <div class="imageblock">
 <div class="content">
-<img src="./images/kike.png" alt="kike.png" />
+<img class="profilePhoto" src="./images/kike.png" alt="kike.png" />
 </div>
 </div>
 <div class="imageblock">
 <div class="content">
 <a class="image" href="https://github.com/EnriqueJRodriguez">
-<img src="./images/github.png" alt="github.png" />
+<img class="githubLink" src="./images/github.png" alt="github.png" />
 </a>
 </div>
 </div>
@@ -836,13 +898,13 @@ This is specially concerning with data, which has become a valuable product, and
 <h3 id="_jose_manuel_estrada_muñoz">Jose Manuel Estrada Muñoz</h3>
 <div class="imageblock">
 <div class="content">
-<img src="./images/jose.png" alt="jose.png" />
+<img class="profilePhoto" src="./images/jose.png" alt="jose.png" />
 </div>
 </div>
 <div class="imageblock">
 <div class="content">
 <a class="image" href="https://github.com/josecurioso">
-<img src="./images/github.png" alt="github.png" />
+<img class="githubLink" src="./images/github.png" alt="github.png" />
 </a>
 </div>
 </div>
@@ -854,13 +916,13 @@ Regarding the project I have taken on the coordination role of the team, I enjoy
 <h3 id="_luis_pastrana_garcía">Luis Pastrana García</h3>
 <div class="imageblock">
 <div class="content">
-<img src="./images/luis.png" alt="luis.png" />
+<img class="profilePhoto" src="./images/luis.png" alt="luis.png" />
 </div>
 </div>
 <div class="imageblock">
 <div class="content">
 <a class="image" href="https://github.com/pastrana98">
-<img src="./images/github.png" alt="github.png" />
+<img class="githubLink" src="./images/github.png" alt="github.png" />
 </a>
 </div>
 </div>
@@ -874,13 +936,13 @@ And writing some code 4 the school.</p></div>
 <h3 id="_thomas_perry">Thomas Perry</h3>
 <div class="imageblock">
 <div class="content">
-<img src="./images/thomas.png" alt="thomas.png" />
+<img class="profilePhoto" src="./images/thomas.png" alt="thomas.png" />
 </div>
 </div>
 <div class="imageblock">
 <div class="content">
 <a class="image" href="https://github.com/tgperry">
-<img src="./images/github.png" alt="github.png" />
+<img class="githubLink" src="./images/github.png" alt="github.png" />
 </a>
 </div>
 </div>
@@ -890,13 +952,13 @@ And writing some code 4 the school.</p></div>
 <h3 id="_yeray_galán_lópez">Yeray Galán López</h3>
 <div class="imageblock">
 <div class="content">
-<img src="./images/yeray.png" alt="yeray.png" />
+<img class="profilePhoto" src="./images/yeray.png" alt="yeray.png" />
 </div>
 </div>
 <div class="imageblock">
 <div class="content">
 <a class="image" href="https://github.com/YerayG">
-<img src="./images/github.png" alt="github.png" />
+<img class="githubLink" src="./images/github.png" alt="github.png" />
 </a>
 </div>
 </div>
@@ -911,7 +973,7 @@ And writing some code 4 the school.</p></div>
 Translated into english, we could say that it is a platform/standard to store pieces of data, linked between them.</p></div>
 <div class="imageblock">
 <div class="content">
-<img src="./images/Solid.png" alt="Solid.png" />
+<img  class="solidIcon" src="./images/Solid.png" alt="Solid.png" />
 </div>
 </div>
 <div class="paragraph"><p>In Solid, you have what is called a <strong>POD</strong>. Think of it as a box for your data. Webpages, services and apps will access the data stored there, but they will not own it. You do. And you let them have a look at your box, or maybe not. Maybe you just allow them to see certain things. The important thing is that <strong>you are in control</strong>.</p></div>
