@@ -479,6 +479,19 @@ span.line-through { text-decoration: line-through; }
 
 div.unbreakable { page-break-inside: avoid; }
 
+table{
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+th, td {
+  font-family: 'Roboto';
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1.5px solid #ddd;
+}
+
 
 /*
  * xhtml11 specific
@@ -797,7 +810,7 @@ asciidoc.install(2);
 </head>
 <body class="article">
 <div id="header">
-<h1>User manual</h1>
+<h1>DE-CHAT user manual</h1>
 <div id="toc">
   <div id="toctitle">Table of Contents</div>
   <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
@@ -806,13 +819,13 @@ asciidoc.install(2);
 <div id="content">
 <div id="preamble">
 <div class="sectionbody">
-<div class="paragraph"><p>Welcome to the official user manual of the DE_CHAT application. Here, you will learn how to use it, meet the team behind it, and understand the implications behind it.</p></div>
+<div class="paragraph"><p>Welcome to the official user manual of the DE-CHAT application. Here, you will learn how to use it, meet the team behind it, and understand the implications behind it.</p></div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_what_is_de_chat">What is DE_CHAT?</h2>
+<h2 id="_what_is_de_chat">What is DE-CHAT?</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>DE_CHAT stands for Decentralized Chat. It is simply what its name indicates: a chat application which not centralized arround a single provider, but distributed arround its users.</p></div>
+<div class="paragraph"><p>DE-CHAT stands for Decentralized Chat. It is simply what its name indicates: a chat application which is not centralized arround a single provider, but distributed arround its users.</p></div>
 <div class="paragraph"><p>Its development began as the practical assigment for the <a href="https://arquisoft.github.io">Software Architecture</a> course from the degree on Software Engineering of the University of Oviedo.</p></div>
 <div class="paragraph"><p>No longer will you be preocupied about what facebook or whatsapp do with your messages. They are yours, controlled by you, and you are the only responsible for them.</p></div>
 <div class="paragraph"><p>All of this is based on the SOLID project, a software platform and specification by <a href="https://www.w3.org/People/Berners-Lee/card#i">Sir Tim Berners Lee</a> and the MIT, which is further discussed in the present document.</p></div>
@@ -831,21 +844,21 @@ asciidoc.install(2);
 <div class="attribution">
 &#8212; Sir Tim Berners Lee
 </div></div>
-<div class="paragraph"><p>The web, as it was originally conceived, is decentralized. Menaing that there is no central hub o authority to rule its behavior. It was intended to be a place of equality, where each service and user would be ultimately equal on its capabilities.</p></div>
+<div class="paragraph"><p>The web, as it was originally conceived, is decentralized. Meaning that there is no central hub o authority to rule its behavior. It was intended to be a place of equality, where each service and user would be ultimately equal on its capabilities.</p></div>
 <div class="paragraph"><p>However, over the years, the tendency has been the opposite. Nowadays, the web is increasingly centralizing around certain infrastructures and corporations, like Facebook, Google or Microsoft, corrupting the original ideas of TBL. Believe it or not, there are even institutions that have a Facebook page instead of a web portal.
-This is specially concerning with data, which has become a valuable product, and is generally in the hands of this corporations and services instead of the people who should own them.</p></div>
+This is specially concerning with data, which has become a valuable product, and is generally in the hands of these corporations and services instead of the people who should own them.</p></div>
 <div class="imageblock">
 <div class="content">
 <img class="solidIcon" src="./images/pod.png" alt="pod.png" />
 </div>
 </div>
-<div class="paragraph"><p>That is the reason why Tim Berners Lee, alongside MIT and other professionals, have started the development of platform, a technology, a project to Bring back that original conception of the web. The SOLID project.</p></div>
+<div class="paragraph"><p>That is the reason why Tim Berners Lee, alongside MIT and other professionals, have started the development of the platform, a technology, a project to bring back that original conception of the web. The SOLID project.</p></div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_meet_the_team">Meet the team</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>This are the people that has made this project possible.</p></div>
+<div class="paragraph"><p>These are the people that has made DE-CHAT possible.</p></div>
 <div class="sect2">
 <h3 id="_álvaro_sánchez_garcía">Álvaro Sánchez García</h3>
 <div class="imageblock">
@@ -876,7 +889,7 @@ This is specially concerning with data, which has become a valuable product, and
 </a>
 </div>
 </div>
-<div class="paragraph"><p>I am <strong>Ángel García</strong>, third year student at the School of Computer Engineering of Oviedo. Proud member of the Free Software Foundation as an associate student, I am one of those who will say <em>GNU/Linux</em>. The testing infraestructure, frameworks and this manual has beeen parts of my contribution to DE_CHAT. Regarding engineering capabilities, I am also the one who though that a loop of 168 repetitions with SQL queries to a single database was a good idea.</p></div>
+<div class="paragraph"><p>I am <strong>Ángel García</strong>, third year student at the School of Computer Engineering of Oviedo. Proud member of the Free Software Foundation as an associate student, I am one of those who will say <em>GNU/Linux</em>. The testing infraestructure, frameworks and this manual has beeen parts of my contribution to DE-CHAT. Regarding engineering capabilities, I am also the one who though that a loop of 168 repetitions with SQL queries to a single database was a good idea.</p></div>
 </div>
 <div class="sect2">
 <h3 id="_enrique_josé_rodriguez_martín">Enrique José Rodriguez Martín</h3>
@@ -892,7 +905,7 @@ This is specially concerning with data, which has become a valuable product, and
 </a>
 </div>
 </div>
-<div class="paragraph"><p>I am <strong>Enrique-José Rodriguez Martín</strong>. My name migth sound like the one of a soap opera protagonist, but the truth is that I am a Software Engineering student at the University of Oviedo. I am responsable for the look and feel and CSS workarrounds, appart from the not yet working terminal implementation of DE_CHAT. Appart from studying, I am also into sports and quite interested in history and politics.</p></div>
+<div class="paragraph"><p>I am <strong>Enrique José Rodriguez Martín</strong>. I am a Software Engineering student at the University of Oviedo. I am responsable for the look and feel and CSS workarrounds and some other conceptual decissions, appart from the not yet working terminal implementation of DE-CHAT. Appart from studying, I am also a recognized canoeist and local politician and political activist.</p></div>
 </div>
 <div class="sect2">
 <h3 id="_jose_manuel_estrada_muñoz">Jose Manuel Estrada Muñoz</h3>
@@ -908,9 +921,9 @@ This is specially concerning with data, which has become a valuable product, and
 </a>
 </div>
 </div>
-<div class="paragraph"><p>My name is <strong>Jose Manuel</strong>, josecurioso on everything important in life (mainly Steam and the internet). My hobbies include but are not limited to reading, long bike rides (like weeks long), climbing, mountaineering, playing video games and travelling (who doesn&#8217;t like travelling). I never turn down a crazy adventure be it a trip to wherever we end up or a vivac night in the middle of nowhere.
+<div class="paragraph"><p>My name is <strong>Jose Manuel</strong>, josecurioso on everything important in life (mainly Steam and the internet). My hobbies include but are not limited to reading, long bike rides (like weeks long), climbing, mountaineering, playing video games and travelling (who doesn&#8217;t like travelling). I never turn down a crazy adventure, be it a trip to wherever we end up or a vivac night in the middle of nowhere.
 Regarding the project I have taken on the coordination role of the team, I enjoy learning about new technologies and I have discovered a new world with the Javascript/Typescript-based stacks.
-(Disclaimer: the resolution and orientation of the photo are intentional)</p></div>
+(Disclaimer: the resolution and orientation of the photo are intentional).</p></div>
 </div>
 <div class="sect2">
 <h3 id="_luis_pastrana_garcía">Luis Pastrana García</h3>
@@ -930,7 +943,7 @@ Regarding the project I have taken on the coordination role of the team, I enjoy
 In west Asturias studied and raised.
 On the Pc was where I spent most of my days.
 Chillin out, maxin', relaxin' all cool
-And writing some code 4 the school.</p></div>
+And writing some code 4-school.</p></div>
 </div>
 <div class="sect2">
 <h3 id="_thomas_perry">Thomas Perry</h3>
@@ -976,13 +989,13 @@ Translated into english, we could say that it is a platform/standard to store pi
 <img  class="solidIcon" src="./images/Solid.png" alt="Solid.png" />
 </div>
 </div>
-<div class="paragraph"><p>In Solid, you have what is called a <strong>POD</strong>. Think of it as a box for your data. Webpages, services and apps will access the data stored there, but they will not own it. You do. And you let them have a look at your box, or maybe not. Maybe you just allow them to see certain things. The important thing is that <strong>you are in control</strong>.</p></div>
+<div class="paragraph"><p>In Solid, you have what is called a <strong>POD</strong>. Think of it as a box for your data. Webpages, services and apps will access the data stored there, but they will not own it. You store there your data. And you let them have a look at your box, or maybe not. Maybe you just allow them to see certain things. The important thing is that <strong>you are in control</strong>.</p></div>
 <div class="imageblock">
 <div class="content">
 <img src="./images/decentralization.png" alt="decentralization.png" />
 </div>
 </div>
-<div class="paragraph"><p>Following this approach, you will need a SOLID account from a provider. And the chats you create will be stored there. DE_CHAT will just display them nicely. As long as you let it do it.</p></div>
+<div class="paragraph"><p>Following this approach, you will need a SOLID account from a provider. And the chats you create will be stored there. DE-CHAT will just display them nicely. As long as you let it do it.</p></div>
 </div>
 </div>
 <div class="sect1">
@@ -991,7 +1004,7 @@ Translated into english, we could say that it is a platform/standard to store pi
 <div class="paragraph"><p>Here, you will be given the necessary instructions to use the various functionalities of the app.</p></div>
 <div class="sect2">
 <h3 id="_loging_in">Loging in</h3>
-<div class="paragraph"><p>To use DE_CHAT you need to have an account on a SOLID provider. You will be given the option to select from the various providers, and the either logging in to an existing account, or creating a new one.</p></div>
+<div class="paragraph"><p>To use DE-CHAT you need to have an account on a SOLID provider. You will be given the option to select from the various providers, and the either logging in to an existing account, or creating a new one.</p></div>
 <div class="imageblock">
 <div class="content">
 <img src="./images/login.png" alt="login.png" />
@@ -1057,7 +1070,7 @@ Your address
 </div>
 <div class="sect2">
 <h3 id="_creating_new_chats">Creating new chats</h3>
-<div class="paragraph"><p>There is an orb with a <strong>+</strong> symbol just below your list of friends. Click on it to open a new dialog, where you can select the friends that you want to chat with.</p></div>
+<div class="paragraph"><p>There is an orb with a <strong>+</strong> symbol just below your list of friends. Click on it to open a new dialog, where you can write the name of the chatroom and select the friends that you want to chat with.</p></div>
 <div class="imageblock">
 <div class="content">
 <img src="./images/chat.png" alt="chat.png" />
@@ -1066,12 +1079,34 @@ Your address
 </div>
 <div class="sect2">
 <h3 id="_sharing_images_and_videos">Sharing images and videos</h3>
-<div class="paragraph"><p>To send messages with multimedia, the file must be <strong>previously uploaded to your personal POD</strong>. Once It is uploaded, just write its URI and it will be displayed to the other users in the chat.</p></div>
+<div class="paragraph"><p>To send messages or other multimedia, the file must be <strong>previously uploaded to your personal POD</strong> or provide a link to it. Once It is uploaded, just write the URI and it will be displayed to the other users in the chat. For displaying properly images from the internet you must provide the concrete image link ending by for example .png.</p></div>
 <div class="imageblock">
 <div class="content">
 <img src="./images/multimedia.png" alt="multimedia.png" />
 </div>
 </div>
+</div>
+<div class="sect2">
+  <h3 id="_sharing_emokis">Emoji support</h3>
+  <div class="paragraph"><p>We have emoji full support, you can use our native system, just type as show in the table below or use an external resource to obtain the emojis.</p></div>
+  <div>
+    <table> <tr> <th>Expression</th> <th>Output</th> </tr> 
+            <tr> <td>(:smile)</td> <td>😄</td> </tr> 
+            <tr> <td>(:sweat)</td> <td>😅</td> </tr>
+            <tr> <td>(:laugh)</td> <td>😂</td> </tr> 
+            <tr> <td>(:wink)</td> <td>😉</td> </tr> 
+            <tr> <td>(:kiss)</td> <td>😘</td> </tr>
+            <tr> <td>(:hug)</td> <td>🤗</td> </tr>
+            <tr> <td>(:surprise)</td> <td>😮</td> </tr>  
+            <tr> <td>(:flushed)</td> <td>😳</td> </tr> 
+            <tr> <td>(:crying)</td> <td>😢</td> </tr> 
+            <tr> <td>(:angry)</td> <td>😠</td> </tr> 
+            <tr> <td>(:heart)</td> <td>❤</td> </tr>
+            <tr> <td>(:ok)</td> <td>👌</td> </tr>
+            <tr> <td>(:thumbup)</td> <td>👍</td> </tr>
+            <tr> <td>(:thumbdown)</td> <td>👎</td> </tr>   
+            </table>
+  </div>
 </div>
 </div>
 </div>
